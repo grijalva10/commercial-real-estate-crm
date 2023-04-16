@@ -1,0 +1,67 @@
+{
+  "doctype": "DocType",
+  "name": "CustomSidebarItem",
+  "title_field": "label",
+  "treeview": 1,
+  "istree": 1,
+  "search_fields": "name",
+  "fields": [
+    {
+      "fieldname": "name",
+      "fieldtype": "Data",
+      "label": "Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "label",
+      "fieldtype": "Data",
+      "label": "Label",
+      "reqd": 1
+    },
+    {
+      "fieldname": "parent",
+      "fieldtype": "Link",
+      "label": "Parent",
+      "options": "CustomSidebarItem"
+    },
+    {
+      "fieldname": "doctype",
+      "fieldtype": "Link",
+      "label": "Doctype",
+      "options": "DocType"
+    },
+    {
+      "fieldname": "view_type",
+      "fieldtype": "Select",
+      "label": "View Type",
+      "options": "List\nForm\nReport\nCalendar"
+    },
+    {
+      "fieldname": "icon",
+      "fieldtype": "Data",
+      "label": "Icon"
+    },
+    {
+      "fieldname": "sequence",
+      "fieldtype": "Int",
+      "label": "Sequence",
+      "reqd": 1
+    },
+    {
+      "fieldname": "is_group",
+      "fieldtype": "Check",
+      "label": "Is Group"
+    },
+    {
+      "fieldname": "is_collapsible",
+      "fieldtype": "Check",
+      "label": "Is Collapsible",
+      "depends_on": "is_group"
+    },
+    {
+      "fieldname": "color",
+      "fieldtype": "Data",
+      "label": "Color"
+    }
+  ]
+}

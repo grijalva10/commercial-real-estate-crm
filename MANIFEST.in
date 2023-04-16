@@ -16,3 +16,4 @@ recursive-include commercial_real_estate *.py
 recursive-include commercial_real_estate *.svg
 recursive-include commercial_real_estate *.txt
 recursive-exclude commercial_real_estate *.pyc
+include docs/*

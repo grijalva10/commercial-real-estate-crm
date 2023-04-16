@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 12:21:18.047980",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_title",
+  "activity_type",
+  "reference_doctype",
+  "reference_docname",
+  "activity_date",
+  "activity_time",
+  "activity_duration",
+  "activity_notes",
+  "assigned_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_title",
+   "fieldtype": "Data",
+   "label": "activity_title"
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "label": "activity_type",
+   "options": "Call\nMeeting\nEmail\nSite Visit"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "reference_doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_docname",
+   "fieldtype": "Dynamic Link",
+   "label": "reference_docname",
+   "options": "reference_doctype"
+  },
+  {
+   "default": "Today",
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "label": "activity_date"
+  },
+  {
+   "fieldname": "activity_time",
+   "fieldtype": "Time",
+   "label": "activity_time"
+  },
+  {
+   "fieldname": "activity_duration",
+   "fieldtype": "Int",
+   "label": "activity_duration"
+  },
+  {
+   "fieldname": "activity_notes",
+   "fieldtype": "Data",
+   "label": "activity_notes"
+  },
+  {
+   "default": "%(owner)s",
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "assigned_to",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 12:21:18.047980",
+ "modified_by": "Administrator",
+ "module": "Commercial Real Estate",
+ "name": "Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "console",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/commercial_real_estate/console/ && yarn copy-html-entry",
+    "preview": "vite preview",
+    "copy-html-entry": "cp ../commercial_real_estate/public/console/index.html ../commercial_real_estate/www/console.html"
+  },
+  "dependencies": {
+    "@saas-ui/pro": "^0.17.1",
+    "@saas-ui/react": "^1.9.1",
+    "@saas-ui/sidebar": "^0.9.0",
+    "frappe-react-sdk": "^1.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0",
+    "socket.io-client": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.0"
+  }
+}

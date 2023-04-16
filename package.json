@@ -1,0 +1,22 @@
+{
+  "name": "commercial_real_estate",
+  "version": "1.0.0",
+  "description": "Commercial Real Estate App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd console && yarn dev",
+    "build": "cd console && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@saas-ui/pro": "^0.17.1",
+    "@saas-ui/react": "^1.9.1",
+    "framer-motion": "^6"
+  }
+}

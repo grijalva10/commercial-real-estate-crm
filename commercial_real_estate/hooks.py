@@ -12,7 +12,10 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/commercial_real_estate/css/commercial_real_estate.css"
-# app_include_js = "/assets/commercial_real_estate/js/commercial_real_estate.js"
+app_include_css = ["commercial_real_estate.bundle.css"]
+app_include_js = ["commercial_real_estate.bundle.js"]
+app_include_docs = "/assets/commercial_real_estate/docs"
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/commercial_real_estate/css/commercial_real_estate.css"
@@ -199,3 +202,5 @@ app_license = "MIT"
 # auth_hooks = [
 #	"commercial_real_estate.auth.validate"
 # ]
+
+website_route_rules = [{'from_route': '/console/<path:app_path>', 'to_route': 'console'},]

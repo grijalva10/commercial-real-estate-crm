@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-31 12:25:35.770403",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "parent1",
+  "doctype_name",
+  "view_type",
+  "icon",
+  "sequence",
+  "is_group",
+  "is_collapsible",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "parent1",
+   "fieldtype": "Link",
+   "label": "parent",
+   "options": "CustomSidebarItem"
+  },
+  {
+   "fieldname": "view_type",
+   "fieldtype": "Select",
+   "label": "view_type",
+   "options": "List\nForm\nReport\nCalendar"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "label": "icon"
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Int",
+   "label": "sequence"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "is_group"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_collapsible",
+   "fieldtype": "Check",
+   "label": "is_collapsible"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "color"
+  },
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "label": "doctype_name",
+   "options": "DocType"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-31 12:52:37.340441",
+ "modified_by": "Administrator",
+ "module": "Commercial Real Estate",
+ "name": "CustomSidebarItem",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

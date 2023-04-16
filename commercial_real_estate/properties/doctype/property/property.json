@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-03-29 10:40:18.014758",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property_name",
+  "property_type",
+  "location",
+  "address",
+  "city",
+  "state",
+  "postal_code",
+  "country",
+  "total_area",
+  "total_units",
+  "year_built",
+  "building_class",
+  "zoning",
+  "property_image",
+  "additional_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_name",
+   "fieldtype": "Data",
+   "label": "property_name"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "property_type",
+   "options": "Office\nRetail\nIndustrial\nMulti-Family\nLand\nHospitality\nMixed-Use\nOther"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "address "
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "city"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "state"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "postal_code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "country"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Area"
+  },
+  {
+   "fieldname": "total_units",
+   "fieldtype": "Int",
+   "label": "Total Units"
+  },
+  {
+   "fieldname": "year_built",
+   "fieldtype": "Int",
+   "label": "Year Built"
+  },
+  {
+   "fieldname": "building_class",
+   "fieldtype": "Select",
+   "label": "Building Class",
+   "options": "A\nB\nC\nN/A"
+  },
+  {
+   "fieldname": "zoning",
+   "fieldtype": "Data",
+   "label": "Zoning"
+  },
+  {
+   "fieldname": "property_image",
+   "fieldtype": "Attach Image",
+   "label": "Property Image"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Text",
+   "label": "additional_info"
+  }
+ ],
+ "image_field": "property_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 10:45:49.594304",
+ "modified_by": "Administrator",
+ "module": "Properties",
+ "name": "Property",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "property_name"
+}
